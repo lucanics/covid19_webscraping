@@ -25,7 +25,7 @@ def get_dashboard_html():
         wait = WebDriverWait(driver, 60).until(
             EC.text_to_be_present_in_element((By.ID, "ember34"), "Austria")
         ) 
-        elem = driver.find_element_by_id("ember34")  # get element
+        elem = driver.find_element_by_id("ember34")
         elem_inner = elem.get_attribute('innerHTML')
         soup_data = BeautifulSoup(elem_inner, features="html.parser")
         timestamp = driver.find_element_by_id("ember55")  # get timestamp for most recent data-upload

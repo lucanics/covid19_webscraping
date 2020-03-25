@@ -1,1 +1,3 @@
 Covid-19_confirmed_cases.csv
+venv/*
+.vscode
