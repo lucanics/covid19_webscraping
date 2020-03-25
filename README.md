@@ -15,5 +15,5 @@ processed to vizualize trends over time, which will also be a part of this proje
 
 # run
 * create virtualenv
-* pip install requirements.txt
+* pip install -r requirements.txt
 * python run.py
