@@ -15,7 +15,10 @@ baseurl = "https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7
 
 def get_dashboard_html():
     '''get html from dashboard after the relevant data it done loading'''
-    driver = webdriver.Chrome()
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+
+    driver = webdriver.Chrome(options=options)
     driver.get(baseurl)
 
     try:
